@@ -1,0 +1,396 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #050505;
+  color: white;
+}
+
+
+/* HEADER */
+
+header {
+  height: 80px;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #b6ff00;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #b6ff00;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 600px;
+  padding: 70px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      #263500 0%,
+      transparent 35%
+    ),
+    #050505;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.brand-name {
+  color: #b6ff00;
+  font-size: 17px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 85px;
+  line-height: 0.9;
+  margin-bottom: 25px;
+}
+
+.tagline {
+  color: #aaa;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+}
+
+
+/* BUTTONS */
+
+.main-button,
+.product-button {
+  display: inline-block;
+
+  padding: 16px 35px;
+
+  background: #b6ff00;
+  color: #050505;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.main-button:hover,
+.product-button:hover {
+  background: white;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+  width: 42%;
+  height: 450px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 80%;
+  height: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #b6ff00,
+      #314600 45%,
+      #111 46%
+    );
+
+  color: #050505;
+
+  font-size: 70px;
+  font-weight: 900;
+
+  transform: rotate(-3deg);
+}
+
+
+/* SHOP */
+
+.shop {
+  padding: 90px 60px;
+
+  background: #0a0a0a;
+
+  text-align: center;
+}
+
+.shop h2 {
+  color: #b6ff00;
+
+  font-size: 35px;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 45px;
+}
+
+.product-card {
+  width: 320px;
+
+  margin: auto;
+
+  background: #111;
+
+  border: 1px solid #292929;
+
+  text-align: left;
+}
+
+.product-image {
+  height: 380px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #b6ff00,
+      #263500 45%,
+      #111 46%
+    );
+}
+
+.product-image span {
+  font-size: 45px;
+
+  font-weight: 900;
+
+  color: #050505;
+
+  transform: rotate(-10deg);
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product-info h3 {
+  font-size: 21px;
+
+  margin-bottom: 8px;
+}
+
+.product-info p {
+  color: #888;
+
+  margin-bottom: 15px;
+}
+
+.product-info strong {
+  display: block;
+
+  color: #b6ff00;
+
+  font-size: 22px;
+
+  margin-bottom: 20px;
+}
+
+
+/* COLLECTION */
+
+.collection {
+  padding: 100px 30px;
+
+  text-align: center;
+
+  background: #050505;
+}
+
+.collection h2 {
+  color: #b6ff00;
+
+  font-size: 35px;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 20px;
+}
+
+.collection p {
+  color: #999;
+
+  font-size: 17px;
+}
+
+
+/* CONTACT */
+
+.contact {
+  padding: 100px 30px;
+
+  text-align: center;
+
+  background: #0a0a0a;
+}
+
+.contact h2 {
+  color: #b6ff00;
+
+  font-size: 35px;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #999;
+
+  margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 25px;
+
+  text-align: center;
+
+  background: #000;
+
+  color: #666;
+
+  font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+
+    padding: 20px;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  nav {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 60px 25px;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 50px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .tagline {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 350px;
+  }
+
+  .image-placeholder {
+    width: 80%;
+    height: 90%;
+
+    font-size: 50px;
+  }
+
+  .shop {
+    padding: 70px 20px;
+  }
+
+  .shop h2,
+  .collection h2,
+  .contact h2 {
+    font-size: 25px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+}
